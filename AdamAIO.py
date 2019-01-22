@@ -3,7 +3,7 @@ import torch
 from torch.optim.optimizer import Optimizer
 
 class AdamAIO(Optimizer):
-    def __init__(self, params, lr=2e-3, betas=(0.9, 0.999), eps=5e-3, weight_decay=5e-6, hypergrad=1e-7, partial=0.75):#1e-7
+    def __init__(self, params, lr=2e-3, betas=(0.9, 0.999), eps=5e-3, weight_decay=5e-6, hypergrad=1e-7, partial=0.75):
         defaults = dict(lr=lr, betas=betas, eps=eps, weight_decay=weight_decay, hypergrad=hypergrad, partial=partial)
         super().__init__(params, defaults)
     def step(self, closure=None):
