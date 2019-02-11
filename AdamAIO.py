@@ -3,16 +3,23 @@ All-In-One Adam Optimizer where several novelties are combined from following pa
 
     Decoupled Weight Decay Regularization for Adam https://arxiv.org/abs/1711.05101
 
-Authors shown that the real reason why Momentum optimizer is often outperforming Adam in generalization was due to the fact that Adam does not perform well under L2 regularization and developed decoupled weight decay as a solution.
+Authors shown that the real reason why Momentum optimizer is often outperforming Adam in generalization was due to 
+the fact that Adam does not perform well under L2 regularization and developed decoupled weight decay as a solution.
 
     Online Learning Rate Adaptation with Hypergradient Descent https://arxiv.org/abs/1703.04782
 
-This is enabled via "hypergrad" parameter by setting it to any value except zero. It enables the optimizer to update the learning-rate itself by the technique proposed in the paper, instead of giving an external schedule which would require lots of additional hyperparameters. It is especially useful when one doesn't have the chance to hypertune a schedule.
+This is enabled via "hypergrad" parameter by setting it to any value except zero. It enables the optimizer to update
+the learning-rate itself by the technique proposed in the paper, instead of giving an external schedule which would 
+require lots of additional hyperparameters. It is especially useful when one doesn't want to hypertune a schedule.
 
-    Closing the Generalization Gap of Adaptive Gradient Methods in Training Deep Neural Networks https://arxiv.org/abs/1711.05101
+    Closing the Generalization Gap of Adaptive Gradient Methods in Training Deep Neural Networks 
+    https://arxiv.org/abs/1711.05101
 
-This can be set by the "partial" parameter, which controls how likely the optimizer acts similar to Adam (1.0) and SGD (0.0), which is very useful if hypertuned. One can also update (decay) this parameter online to switch between Adam and SGD optimizers in an easy way, which has been recommended by previous research for a better generalization.
+This can be set by the "partial" parameter, which controls how likely the optimizer acts similar to Adam (1.0) and 
+SGD (0.0), which is very useful if hypertuned. One can also update (decay) this parameter online to switch between 
+Adam and SGD optimizers in an easy way, which has been recommended by previous research for a better generalization.
 '''
+
 import math
 import torch
 from torch.optim.optimizer import Optimizer
