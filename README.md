@@ -1,4 +1,5 @@
-# pytorch-adamaio
+# All-In-One Adam Optimizer in PyTorch
+
 All-In-One Adam Optimizer where several novelties are combined from following papers:
 
 1) Decoupled Weight Decay Regularization for Adam
