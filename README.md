@@ -16,3 +16,8 @@ This is enabled via "hypergrad" parameter by setting it to any value except zero
 https://arxiv.org/abs/1711.05101
 
 This can be set by the "partial" parameter, which controls how likely the optimizer acts similar to Adam (1.0) and SGD (0.0), which is very useful if hypertuned. One can also update (decay) this parameter online to switch between Adam and SGD optimizers in an easy way, which has been recommended by previous research for a better generalization.
+
+# AdaBound with Decoupled Weight Decay
+
+Adaptive Gradient Methods with Dynamic Bound of Learning Rate
+https://github.com/Luolc/AdaBound
