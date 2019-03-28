@@ -13,7 +13,7 @@ https://arxiv.org/abs/1703.04782
 This is enabled via "hypergrad" parameter by setting it to any value except zero. It enables the optimizer to update the learning-rate itself by the technique proposed in the paper, instead of giving an external schedule which would require lots of additional hyperparameters. It is especially useful when one doesn't have the chance to hypertune a schedule.
 
 3) Closing the Generalization Gap of Adaptive Gradient Methods in Training Deep Neural Networks
-https://arxiv.org/abs/1711.05101
+https://arxiv.org/abs/1806.06763
 
 This can be set by the "partial" parameter, which controls how likely the optimizer acts similar to Adam (1.0) and SGD (0.0), which is very useful if hypertuned. One can also update (decay) this parameter online to switch between Adam and SGD optimizers in an easy way, which has been recommended by previous research for a better generalization.
 
