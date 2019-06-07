@@ -21,3 +21,6 @@ This can be set by the "partial" parameter, which controls how likely the optimi
 
 Adaptive Gradient Methods with Dynamic Bound of Learning Rate
 https://github.com/Luolc/AdaBound
+
+Exploiting Uncertainty of Loss Landscape for Stochastic Optimization
+https://github.com/bsvineethiitg/adams
